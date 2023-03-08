@@ -23,7 +23,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - yarn build:all
-      # - DOCKER_BUILDKIT=1 docker yarn build-image
+      - yarn build-image
   post_build:
     commands:
       - echo Build completed on `date`
